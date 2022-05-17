@@ -1,0 +1,1 @@
+if (!localStorage.getItem("MWEdit-mih7sf5eep.lang")) localStorage.setItem("MWEdit-mih7sf5eep.lang", "en")
