@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outFile": "./script.js"
+    },
+    "include": [
+        "./src/*.ts",
+        "index.ts"
+    ]
+}

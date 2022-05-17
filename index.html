@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>MWEdit</title>
+
+        <link rel="stylesheet" href="/style.css" />
+        <script src="/script.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="item">
+                <div class="item-name pointer"><i18n>File</i18n></div>
+                <ul class="item-dropdown">
+                    <li><i18n>New</i18n></li>
+                    <li><i18n>Save</i18n></li>
+                    <li><i18n>Open</i18n></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-name pointer" id="preview-file"><i18n>Preview</i18n></div>
+            </div>
+        </nav>
+
+        <textarea id="content" class="content"></textarea>
+        <div class="preview" style="display: none;"></div>
+    </body>
+</html>

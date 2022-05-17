@@ -1,0 +1,12 @@
+{
+    "en": {
+        "name": "English",
+        "text": {
+            "File": "File",
+            "New": "New",
+            "Save": "Save",
+            "Open": "Open",
+            "Preview": "Preview"
+        }
+    }
+}
