@@ -8,26 +8,23 @@
 
         <title>MWEdit</title>
 
-        <link rel="stylesheet" href="/style.css" />
-        <script src="/script.js" defer></script>
+        <link rel="stylesheet" href="/style.min.css" />
+        <script src="/script.min.js" defer></script>
     </head>
     <body>
         <nav class="navbar">
             <div class="item">
                 <input id="file-name" placeholder="New File" />
-            </div>
-            <div class="item">
+            </div>&nbsp;<div class="item">
                 <div class="item-name pointer"><i18n>File</i18n></div>
                 <ul class="item-dropdown">
                     <li id="new-file" class="pointer"><i18n>New</i18n></li>
                     <li id="save-file" class="pointer"><i18n>Save</i18n></li>
                     <li id="open-file" class="pointer"><i18n>Open</i18n></li>
                 </ul>
-            </div>
-            <div class="item">
+            </div>&nbsp;<div class="item">
                 <div class="item-name pointer" id="preview-file"><i18n>Preview</i18n></div>
-            </div>
-            <div class="item">
+            </div>&nbsp;<div class="item">
                 <div class="item-name pointer" id="reset-storage"><i18n>Reset</i18n></div>
             </div>
         </nav>
@@ -42,11 +39,10 @@
                 <div class="window-x">X</div>
             </div>
             <div class="window-content">
-                You have unsaved content.<br />
-                Are you sure you want to save?
+                <i18n>You have unsaved content.</i18n><br />
+                <i18n>Are you sure you want to save?</i18n>
                 <div class="button-container" style="padding-top: 5px;">
-                    <button id="unsaved-yes"><i18n>Yes</i18n></button>
-                    <button id="unsaved-no"><i18n>No</i18n></button>
+                    <button id="unsaved-yes"><i18n>Yes</i18n></button>&nbsp;<button id="unsaved-no"><i18n>No</i18n></button>
                 </div>
             </div>
         </div>
@@ -57,8 +53,7 @@
             </div>
             <div class="window-content">
                 <div class="button-container">
-                    <button id="save-locally"><i18n>Locally</i18n></button>
-                    <button id="w-save-file"><i18n>On Desktop</i18n></button>
+                    <button id="save-locally"><i18n>Locally</i18n></button>&nbsp;<button id="w-save-file"><i18n>On Desktop</i18n></button>
                 </div>
             </div>
         </div>
@@ -69,8 +64,7 @@
             </div>
             <div class="window-content">
                 <div class="button-container">
-                    <button id="open-locally"><i18n>Storage</i18n></button>
-                    <button id="open-file"><i18n>File</i18n></button>
+                    <button id="open-locally"><i18n>Storage</i18n></button>&nbsp;<button id="open-file"><i18n>File</i18n></button>
                 </div>
             </div>
         </div>

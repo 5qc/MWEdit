@@ -7,6 +7,7 @@ const i18nTags = document.querySelectorAll("i18n")
 for (let i = 0; i < i18nTags.length; i++) {
     const tag = <HTMLElement>i18nTags[i]
     const text = tag.innerText
-    tag.innerText = i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"][text]
+    tag.after(`${i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"][text]}`)
+    tag.remove() 
 }
 document.getElementById("file-name").setAttribute("placeholder", i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"]["New File"])

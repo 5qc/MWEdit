@@ -9,8 +9,8 @@ saveLocally.onclick = () => {
         setWarning(`${i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"]["{file} already exists locally."].replace("{file}", file)}<br />
         ${i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"]["Do you want to overwrite this file?"]}
         <div class="button-container" style="padding-top: 5px;">
-            <button id="overwrite-yes"><i18n>Yes</i18n></button>
-            <button id="overwrite-no"><i18n>No</i18n></button>
+            <button id="overwrite-yes">${i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"]["Yes"]}</button>
+            <button id="overwrite-no">${i18n[localStorage.getItem("MWEdit-mih7sf5eep.lang")]["text"]["No"]}</button>
         </div>`)
 
         document.getElementById("overwrite-yes").onclick = () => {

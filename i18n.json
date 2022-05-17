@@ -26,7 +26,10 @@
             "Successfully saved to {file}!": "Successfully saved to <b>{file}</b>!",
             "{file} already exists locally.": "<b>{file}</b> already exists locally.",
 
-            "Do you want to overwrite this file?": "Do you want to overwrite this file?"
+            "Do you want to overwrite this file?": "Do you want to overwrite this file?",
+
+            "You have unsaved content.": "You have unsaved content.",
+            "Are you sure you want to save?": "Are you sure you want to save?"
         }
     }
 }
