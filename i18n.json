@@ -2,11 +2,31 @@
     "en": {
         "name": "English",
         "text": {
+            "Yes": "Yes",
+            "No": "No",
+
+            "New File": "New File",
             "File": "File",
             "New": "New",
             "Save": "Save",
             "Open": "Open",
-            "Preview": "Preview"
+            "Preview": "Preview",
+            "Reset": "Reset",
+
+            "Save File": "Save File",
+            "Locally": "Locally",
+            "On Desktop": "On Desktop",
+            "Open File": "Open File",
+            "Storage": "Storage",
+            "Warning!": "Warning!",
+
+            "Are you sure you want to reset your storage?": "Are you sure you want to reset your storage?",
+            "Keep in mind this action is IRREVERSIBLE!": "Keep in mind this action is IRREVERSIBLE!",
+            
+            "Successfully saved to {file}!": "Successfully saved to <b>{file}</b>!",
+            "{file} already exists locally.": "<b>{file}</b> already exists locally.",
+
+            "Do you want to overwrite this file?": "Do you want to overwrite this file?"
         }
     }
 }

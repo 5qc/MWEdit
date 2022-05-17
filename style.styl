@@ -10,6 +10,11 @@ textColor = #f8f8f8
 font()
     font-family mainFont
     font-weight 400
+no-select()
+    user-select none
+    -ms-user-select none
+    -moz-user-select none
+    -webkit-user-select none
 
 // Styling
 html, body
@@ -24,6 +29,32 @@ textarea
     resize none
     &:focus
         outline none
+button
+    font()
+    background lighten(bgColor, 15%)
+    border none
+    color textColor
+    padding 5px
+    font-size 20px
+    border-radius 5px
+    cursor pointer
+    transition .2s background
+    &:hover
+        background lighten(bgColor, 20%)
+        transition .2s background
+    &:active
+        background lighten(bgColor, 10%)
+        transition 0s background
+input
+    font()
+    background lighten(bgColor, 10%)
+    border none
+    padding 7.5px
+    font-size 20px
+    color textColor
+    border-radius 5px
+    &:focus
+        outline none
 .pointer
     cursor pointer
 .link
@@ -32,6 +63,10 @@ textarea
     cursor pointer
     &:hover
         text-decoration none
+
+dt
+    font-weight bold
+    margin-bottom .1em
 
 .navbar
     background lighten(bgColor, 5%)
@@ -72,3 +107,51 @@ textarea
         outline none
 .preview
     font-size 25px
+
+.window
+    position fixed
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    background lighten(bgColor, 5%)
+    border-radius 10px
+    overflow hidden
+    &-title
+        no-select()
+        font-size 20px
+        background lighten(bgColor, 10%)
+        padding 10px
+        cursor pointer
+    &-x
+        position absolute
+        top 5px
+        right 9px
+    &-content
+        padding 10px
+
+.button-container
+    text-align center
+
+.message
+    background lighten(bgColor, 15%)
+    position fixed
+    top 15px
+    left 50%
+    transform translateX(-50%)
+    padding 7.5px 10px
+    border-radius 5px
+    &.success
+        background #9f9
+        color #000
+    &.fail
+        background #f99
+        color #000
+
+// Animations
+@keyframes fade-out
+    from
+        opacity 1
+    to
+        opacity 0
+.fade-out
+    animation 1s fade-out linear

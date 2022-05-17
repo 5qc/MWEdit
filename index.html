@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/favicon.ico" />
 
         <title>MWEdit</title>
 
@@ -13,19 +14,95 @@
     <body>
         <nav class="navbar">
             <div class="item">
+                <input id="file-name" placeholder="New File" />
+            </div>
+            <div class="item">
                 <div class="item-name pointer"><i18n>File</i18n></div>
                 <ul class="item-dropdown">
-                    <li><i18n>New</i18n></li>
-                    <li><i18n>Save</i18n></li>
-                    <li><i18n>Open</i18n></li>
+                    <li id="new-file" class="pointer"><i18n>New</i18n></li>
+                    <li id="save-file" class="pointer"><i18n>Save</i18n></li>
+                    <li id="open-file" class="pointer"><i18n>Open</i18n></li>
                 </ul>
             </div>
             <div class="item">
                 <div class="item-name pointer" id="preview-file"><i18n>Preview</i18n></div>
             </div>
+            <div class="item">
+                <div class="item-name pointer" id="reset-storage"><i18n>Reset</i18n></div>
+            </div>
         </nav>
 
         <textarea id="content" class="content"></textarea>
         <div class="preview" style="display: none;"></div>
+
+        <!-- Windows -->
+        <div class="window" id="window__new-file" style="display: none;">
+            <div class="window-title">
+                <i18n>New File</i18n>
+                <div class="window-x">X</div>
+            </div>
+            <div class="window-content">
+                You have unsaved content.<br />
+                Are you sure you want to save?
+                <div class="button-container" style="padding-top: 5px;">
+                    <button id="unsaved-yes"><i18n>Yes</i18n></button>
+                    <button id="unsaved-no"><i18n>No</i18n></button>
+                </div>
+            </div>
+        </div>
+        <div class="window" id="window__save-file" style="display: none;">
+            <div class="window-title">
+                <i18n>Save File</i18n>
+                <div class="window-x">X</div>
+            </div>
+            <div class="window-content">
+                <div class="button-container">
+                    <button id="save-locally"><i18n>Locally</i18n></button>
+                    <button id="w-save-file"><i18n>On Desktop</i18n></button>
+                </div>
+            </div>
+        </div>
+        <div class="window" id="window__open-file" style="display: none;">
+            <div class="window-title">
+                <i18n>Open File</i18n>
+                <div class="window-x">X</div>
+            </div>
+            <div class="window-content">
+                <div class="button-container">
+                    <button id="open-locally"><i18n>Storage</i18n></button>
+                    <button id="open-file"><i18n>File</i18n></button>
+                </div>
+            </div>
+        </div>
+        <div class="window" id="window__open-file-storage" style="display: none;">
+            <div class="window-title">
+                <i18n>Open File</i18n>
+                <div class="window-x">X</div>
+            </div>
+            <div class="window-content"></div>
+        </div>
+        <div class="window" id="window__reset" style="display: none;">
+            <div class="window-title">
+                <i18n>Reset</i18n>
+                <div class="window-x">X</div>
+            </div>
+            <div class="window-content">
+                <i18n>Are you sure you want to reset your storage?</i18n><br />
+                <i18n>Keep in mind this action is IRREVERSIBLE!</i18n>
+                <div class="button-container" style="padding-top: 5px;">
+                    <button id="reset-btn"><i18n>Reset</i18n></button>
+                </div>
+            </div>
+        </div>
+        <div class="window" id="window__warning" style="display: none;">
+            <div class="window-title">
+                <i18n>Warning!</i18n>
+                <div class="window-x">X</div>
+            </div>
+            <div class="window-content"></div>
+        </div>
+
+        <!-- Message -->
+        <div class="message" style="display: none;"></div>
     </body>
 </html>

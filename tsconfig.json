@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
+        "target": "ES2021",
         "outFile": "./script.js"
     },
     "include": [
+        "_setup.ts",
         "./src/*.ts",
-        "index.ts"
+        "script.ts"
     ]
 }
